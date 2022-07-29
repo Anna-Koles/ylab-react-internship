@@ -18,10 +18,10 @@
   "author": "Vladimir Shestakov",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.18.9",
-    "@babel/preset-env": "^7.18.9",
-    "@babel/preset-react": "^7.18.6",
-    "babel-loader": "^8.2.5",
+    "@babel/core": "^7.18.9", // ядро транспилятора
+    "@babel/preset-env": "^7.18.9", // пресет на поддержку нужного синтаксиса
+    "@babel/preset-react": "^7.18.6", // пресет на поддержку нужного синтаксиса
+    "babel-loader": "^8.2.5", // модуль к Webpack
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
