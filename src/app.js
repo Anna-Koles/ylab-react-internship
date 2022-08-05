@@ -36,7 +36,8 @@ function App({store}) {
                   'раз')}` : '' }
               </div>
               <div className='Item__actions'>
-                <button onClick={(e) => store.deleteItem(item.code, e)}>
+                <button onClick={(e) => {e.stopPropagation(), store.deleteItem(item.code)}}>
+                {/* stopPropagation добавлено, так как при удалении item сбрасывалось выделение у другого item */}
                   Удалить
                 </button>
               </div>
